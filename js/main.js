@@ -96,7 +96,7 @@ const dismissBtnHandler = async() =>{
 isvalidEmailHandler();
 subscribeBtnHandler();
 dismissBtnHandler();
-if(window.innerHeight<=800){
+if(window.innerHeight<=400){
     const banner_image = document.getElementById('banner_image');
     banner_image.src = 'images/illustration-sign-up-mobile.svg';
 }
