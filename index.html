@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+    <div class="container-fluid main_container">
+        <div class="row card_wrapper ">
+            <div class="col content d-flex flex-column ">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly update on:</p>
+                <ul class="d-flex justify-content-center align-items-start flex-column">
+                    <li><span><i class="fa-solid fa-circle-check"></i></span>Product discovery and building what matters
+                    </li>
+                    <li><span><i class="fa-solid fa-circle-check"></i></span>Measuring to ensure updates are success
+                    </li>
+                    <li><span><i class="fa-solid fa-circle-check"></i></span>And much more!</li>
+                </ul>
+                <div class="mb-3">
+                    <div class="emailWrapper position-relative">
+                        <label for="emailField" class="form-label">Email address</label>
+                        <input type="email" class="form-control notErrorEmailField" id="emailField"
+                            placeholder="email@example.com">
+                        <p id="emailValidationErr" class="position-absolute  end-0">Valid email required</p>
+                    </div>
+                </div>
+                <a href="#" id="subscribeBtn" disabled class="myBtn">Subscribe to monthly newsletter</a>
+
+
+            </div>
+            <div class="col img">
+                <img class="img-fluid" id="banner_image" src="images/illustration-sign-up-desktop.svg" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="thankYouMainWrapper">
+        <div class="tick">
+            <img src="images/icon-success.svg" alt="" class="img-fluid">
+        </div>
+        <div class="thankYouContent">
+            <h1>Thanks for<br>subscribing</h1>
+            <p>A confirm email has sent to <span id='emailId'>abc@gmail.com</span>.Please open it and click the button inside to confirm your subscription.</p>
+            <a href="#" id="dismissBtn" class="myBtn">Dismiss message</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+  padding: 10px;
+}
+
+.main_container {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+}
+.main_container .card_wrapper {
+  gap: 10px;
+  height: 100%;
+}
+.main_container .card_wrapper .content {
+  gap: 10px;
+  color: hsl(234, 29%, 20%);
+  width: 100%;
+  padding: 30px;
+}
+.main_container .card_wrapper .content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.main_container .card_wrapper .content ul {
+  list-style: none;
+  padding-left: 0;
+}
+.main_container .card_wrapper .content ul li span {
+  margin-right: 20px;
+  color: hsl(4, 100%, 67%);
+  font-size: 20px;
+}
+
+.emailWrapper {
+  width: 100%;
+}
+.emailWrapper input {
+  width: 100%;
+  height: 50px;
+}
+
+.myBtn {
+  padding: 15px 40px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+  width: 100%;
+  text-align: center;
+}
+.myBtn:hover {
+  box-shadow: hsl(337, 91%, 73%) 0px 10px 36px 0px, hsl(4, 100%, 67%) 0px 0px 0px 1px;
+  background: linear-gradient(90deg, hsl(337, 91%, 73%), hsl(4, 100%, 67%));
+}
+
+#emailValidationErr {
+  display: none;
+  font-size: smaller;
+  top: 10px;
+  color: tomato;
+  font-weight: 700;
+}
+
+.errorEmailField {
+  border: 2px solid red;
+}
+.errorEmailField:focus {
+  border: 2px solid red;
+  box-shadow: rgba(246, 4, 4, 0.35) 0px 5px 15px;
+  outline: none;
+}
+
+.notErrorEmailField {
+  border: 2px solid rgb(140, 255, 0);
+}
+.notErrorEmailField:focus {
+  border: 2px solid rgb(94, 255, 0);
+  box-shadow: rgba(16, 246, 4, 0.35) 0px 5px 15px;
+  outline: none;
+}
+
+.thankYouMainWrapper {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 450px;
+  height: 450px;
+  display: none;
+  padding: 40px;
+  gap: 20px;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 35px;
+}
+.thankYouMainWrapper .thankYouContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  * {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  body, .main_container {
+    border-radius: 0;
+    padding: 0;
+    background-color: white;
+  }
+  .main_container {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .card_wrapper {
+    flex-direction: column-reverse;
+  }
+}
